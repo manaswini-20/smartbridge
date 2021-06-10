@@ -1,0 +1,54 @@
+<html lang="en">
+<body>
+<style>
+body {
+  background-color:LemonChiffon;
+}
+input[type=number], select {
+  width:20%;
+  padding: 8px 10px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=submit] {
+  width: 15%;
+  background-color: CC6666;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+</style>
+<p align="center" style="font-size:45px" ><b>PREDICT CAR PERFORMANCE</b></p>
+<div align="center">
+      <form action="/predict" method="POST">
+<p style="font-size:20px"> Enter cylinders</p>
+<input type="number"  name="cylinders" required/>
+<p style="font-size:20px"> Enter displacement</p>
+<input type="number"  name="displacement"/>
+<p style="font-size:20px"> Enter horsepower</p>
+<input type="number"  name="horsepower"/>
+<p style="font-size:20px"> Enter weight</p>
+<input type="number"  name="weight"/>
+<p style="font-size:20px"> Enter acceleration</p>
+<input type="number"  name="acceleration"/>
+<p style="font-size:20px"> Enter model year</p>
+<input type="number"  name="model year"/>
+<p style="font-size:20px"> Enter origin </p>
+<input type="number"  name="origin "/>
+<br>
+<input type="submit"  value="car mileage"/> 
+</div>
+    </form></div>
+<p align="center" style="font-size:45px">{{ x }}</p>
+</body>
+</html>
